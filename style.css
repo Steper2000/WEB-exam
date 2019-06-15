@@ -16,5 +16,9 @@ height: 190px;}
     }
   }
 
-
+  #back{
+      background-color: #303030;
+      color: white;
+      border-color: black;
+  }
   
