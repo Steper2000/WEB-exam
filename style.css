@@ -16,9 +16,10 @@ height: 190px;}
     }
   }
 
-  #back{
+  #back, #bl-but{
       background-color: #303030;
       color: white;
       border-color: black;
   }
   
+ 
