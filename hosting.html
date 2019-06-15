@@ -21,7 +21,7 @@
       </nav>
 
         <form>
-        <select class="custom-select custom-select-lg mb-3">
+        <select id=trafic class="custom-select custom-select-lg mb-3">
                 <option selected>Выберите тариф</option>
                 <option value="1">Host-1</option>
                 <option value="2">Host-2</option>
@@ -34,20 +34,20 @@
         <label class="custom-control-label" for="customRadio1"><b>Месяц </b> &mdash; <span id=price-m>300</span> руб</label>
       </div>
       <script src="java.js"></script>
-      <script>sale();</script>
+      
       <div class="custom-control custom-radio">
         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-        <label class="custom-control-label" for="customRadio2"><b>6 месяцев </b> &mdash; <span id=price-6m>-</span> руб или <span id=price-6m-m></span></label>
+        <label class="custom-control-label" for="customRadio2"><b>6 месяцев </b> &mdash; <span id=price-6m>-</span> руб <span id=price-6m-m></span></label>
       </div>
       <div class="custom-control custom-radio">
             <input type="radio" id="customRadio3" name="customRadio" class="custom-control-input">
-            <label class="custom-control-label" for="customRadio3"><b>Год </b> &mdash; <span id=price-1y>-</span> руб или <span id=price-1y-m></span></label>
+            <label class="custom-control-label" for="customRadio3"><b>Год </b> &mdash; <span id=price-1y>-</span> руб <span id=price-1y-m></span></label>
           </div>
           <div class="custom-control custom-radio">
             <input type="radio" id="customRadio4" name="customRadio" class="custom-control-input">
-            <label class="custom-control-label" for="customRadio4"><b>3 года </b> &mdash; <span id=price-3y>-</span> руб или <span id=price-3y-m></span></label>
+            <label class="custom-control-label" for="customRadio4"><b>3 года </b> &mdash; <span id=price-3y>-</span> руб <span id=price-3y-m></span></label>
           </div>
-
+<script>sale();</script><!-- подсчёт скидки за увеличение срока хостинга-->
       <hr>
 
 <div class="custom-control custom-switch">
