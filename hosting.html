@@ -19,22 +19,26 @@
 <nav class="blog-pagination pb-4">
         <a id=back class="btn btn-outline-primary " href="index.html">Назад в главное меню</a>
       </nav>
-
-        <form>
+<script src="java.js"></script>
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+        Выберите трафик
+       </h3>        
+<form>
         <select id=trafic class="custom-select custom-select-lg mb-3">
-                <option selected>Выберите тариф</option>
-                <option value="1">Host-1</option>
-                <option value="2">Host-2</option>
+                <option value="1" onselect="selectTR()">Host-1</option>
+                <option value="2"selected>Host-2</option>
                 <option value="3">Host-3</option>
               </select>
-
-<hr>
+              <hr>
+              <h3 class="pb-4 mb-4 font-italic border-bottom">
+                    Выберите срок
+                   </h3>  
 <div class="custom-control custom-radio">
         <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
         <label class="custom-control-label" for="customRadio1"><b>Месяц </b> &mdash; <span id=price-m>300</span> руб</label>
       </div>
-      <script src="java.js"></script>
       
+      <script>selectTR(); </script>
       <div class="custom-control custom-radio">
         <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
         <label class="custom-control-label" for="customRadio2"><b>6 месяцев </b> &mdash; <span id=price-6m>-</span> руб <span id=price-6m-m></span></label>
@@ -48,7 +52,10 @@
             <label class="custom-control-label" for="customRadio4"><b>3 года </b> &mdash; <span id=price-3y>-</span> руб <span id=price-3y-m></span></label>
           </div>
 <script>sale();</script><!-- подсчёт скидки за увеличение срока хостинга-->
-      <hr>
+<hr>
+<h3 class="pb-4 mb-4 font-italic border-bottom">
+    Дополнительные продукты
+       </h3>  
 
 <div class="custom-control custom-switch">
         <input type="checkbox" class="custom-control-input" id="customSwitch1">
@@ -68,7 +75,7 @@
             <label class="custom-control-label" for="customSwitch4">Бесплатный SSL сертификат</label>
 </div>
 <br>
-<input id=bl-but class="btn btn-primary" type="button" onclick="alert(document.querySelector('#price-m').textContent/2)" value=заказать></button>
+<input id=bl-but class="btn btn-primary" type="button" onclick="alert('кнопка работает')" value=заказать></button>
 </div>
 
 </form>

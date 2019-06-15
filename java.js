@@ -5,6 +5,19 @@ function sale(){
     document.querySelector("#price-3y-m").textContent='или '+priceM*0.7 +" руб";
 }
 
-function select(){
-    var tarif =document.querySelector('#trafic')
+function selectTR(){
+    var tarif =document.querySelector('#trafic').value;
+   var priceM;
+    switch(tarif)
+    {
+		case '1':priceM= 300;
+		break;
+		
+		case '2':priceM= 400;
+		break;
+		
+		case '3':priceM= 500;
+		break;
+    }
+    document.querySelector('#price-m').textContent=priceM;
 }
